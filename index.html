@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="TIDE - Transforma tu vida con entrenamiento personal, nutrición y bienestar. Disciplina, constancia y acción. Entrenamiento online 1 a 1 con resultados garantizados.">
+    <meta name="keywords" content="entrenamiento personal, fitness online, nutrición, bienestar, disciplina, TIDE, entrenador personal, transformación física, estilo de vida saludable">
+    <meta name="author" content="TIDE - Tomi Hill">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tide.com/">
+    <meta property="og:title" content="TIDE - Una forma de vivir | Entrenamiento Personal Online">
+    <meta property="og:description" content="Transforma tu vida con entrenamiento personal, nutrición y bienestar. Disciplina, constancia y acción.">
+    <meta property="og:image" content="images/tidelogo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://tide.com/">
+    <meta property="twitter:title" content="TIDE - Una forma de vivir">
+    <meta property="twitter:description" content="Transforma tu vida con entrenamiento personal, nutrición y bienestar.">
+    <meta property="twitter:image" content="images/tidelogo.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/tidelogo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/tidelogo.png">
+    <link rel="apple-touch-icon" href="images/tidelogo.png">
+    
+    <title>TIDE - Una forma de vivir | Entrenamiento Personal Online</title>
+    
+    <!-- Preconnect para mejor rendimiento -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+
+   
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- AOS Animations -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <img src="images/tidelogo.png" alt="TIDE" class="preloader-img">
+            </div>
+            <div class="preloader-spinner"></div>
+            <div class="preloader-text" data-translate="preloader.loading">Cargando...</div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar"></div>
+    </div>
+
+
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#home">
+                    <img src="images/tidelogo.png" alt="TIDE Logo" class="logo-img">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item language-switch-mobile">
+                            <button id="language-switch" class="btn btn-outline-light btn-sm" onclick="changeLanguage(document.documentElement.lang === 'es' ? 'en' : 'es')" data-translate="language.switch">EN</button>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home" data-translate="nav.home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#valores" data-translate="nav.valores">Valores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#entrenar" data-translate="nav.entrenar">Entrena Conmigo</a>
+                        </li>
+                        
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre-mi" data-translate="nav.sobre-mi">Sobre Mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto" data-translate="nav.contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <img src="images/SURF.webp" alt="Surf Background" class="hero-bg-image" loading="lazy">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-12 text-center text-white">
+                    <h1 class="hero-title" data-aos="fade-up" id="typewriter">TIDE</h1>
+                    <h2 class="hero-subtitle" data-aos="fade-up" data-aos-delay="200" data-translate="hero.subtitle">Una Forma De Vivir</h2>
+                    <p class="hero-description" data-aos="fade-up" data-aos-delay="400" data-translate="hero.description">
+                        Transforma tu vida con disciplina, constancia y acción
+                    </p>
+                    <div class="hero-buttons" data-aos="fade-up" data-aos-delay="600">
+                        <a href="#entrenar" class="btn btn-primary btn-lg pulse-btn" data-translate="hero.start-now">Empezar Ahora</a>
+                        <a href="#valores" class="btn btn-outline-light btn-lg" data-translate="hero.learn-more">Conoce Más</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Valores Section -->
+    <section id="valores" class="valores-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title" data-aos="fade-up" data-translate="valores.title">Valores TIDE</h2>
+                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200" data-translate="valores.subtitle">
+                        El verdadero cambio se construye desde adentro hacia afuera, con bases sólidas y un compromiso real.
+                    </p>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="valores-image">
+                        <img src="images/PESO.webp" alt="Valores TIDE" loading="lazy">
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="valores-content">
+                        <p class="valores-text" data-translate="valores.text1">
+                            En TIDE creemos que el verdadero cambio se construye desde adentro. Cuando se trata de valores, no hay atajos. Los cambios reales nacen sobre bases sólidas y una decisión firme de empujar hacia adelante.
+                        </p>
+                        <p class="valores-text" data-translate="valores.text2">
+                            Nos apoyamos en la disciplina, porque sin ella, nada dura. Nada significativo se logra sin disciplina. Es la capacidad de mantener el enfoque incluso cuando la motivación se apaga. Es elegir el camino difícil porque sabés que te va a llevar más lejos.
+                        </p>
+                        <p class="valores-text">
+                            <span data-translate="valores.text3">No trabajamos desde la motivación porque hay días en los que no se quiere. Por eso, vamos más profundo: Trabajamos desde la constancia, que es lo que mantiene todo unido cuando la motivación desaparece. Los grandes resultados no vienen de un solo esfuerzo, sino de hacerse responsable, paso a paso, todos los días.</span> <br> <br> <span data-translate="valores.text4">Creemos en la acción, porque sin movimiento, no hay premio. Lo que importa no es lo que planeás hacer, sino lo que hacés todos los días. Por eso, el bienestar no es negociable: entrenar, alimentarte bien, dormir mejor. Todo forma parte del mismo camino.</span> <br> <br>
+
+<span data-translate="valores.text5">Nos respaldamos en la experiencia real. No enseñamos nada que no hayamos vivido. Nos enfocamos en el compromiso. El mismo compromiso que esperamos de vos. Porque en TIDE solo trabajamos con personas que quieran tomarse su proceso en serio. El cambio exige decisión y dedicación total.</span>
+<span data-translate="valores.text6">Y si estás dispuesto a comprometerte, nosotros también. Porque esto no es solo un entrenamiento. Es una forma de vivir.</span>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="full-width-video-section">
+        <div class="full-width-video-container">
+            <video autoplay loop muted playsinline class="full-width-video" loading="lazy">
+                <source src="/images/Finalvideotide(1).webm" type="video/webm">
+                <!-- Fallback image if video doesn't load -->
+                <img src="images/SURF.JPG" alt="TIDE Lifestyle" class="full-width-image">
+            </video>
+            <div class="full-width-overlay">
+                <div class="container">
+                    <div class="row align-items-center min-vh-100">
+                        <div class="col-12 text-center text-white">
+                            <h2 class="full-width-title" data-aos="fade-up"></h2>
+                            <p class="full-width-subtitle" data-aos="fade-up" data-aos-delay="200">
+                               
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Section -->
+    <section id="servicios" class="servicios-section">
+        <div class="container">
+            <div class="belief-slider-container" data-aos="fade-up">
+                <div class="swiper belief-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 0: Introducción -->
+                        <div class="swiper-slide">
+                            <div class="belief-content">
+                                <h3 class="slide-title" data-translate="servicios.beliefs">En Qué Creemos</h3>
+                                
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 1: Estilo de Vida -->
+                        <div class="swiper-slide">
+                            <div class="belief-content">
+                                <h3 class="slide-title" data-translate="servicios.lifestyle.title">Estilo de Vida</h3>
+                                <div class="slide-text">
+                                    <p data-translate="servicios.lifestyle.text1">Esto no es solo una marca. Es una forma de vivir. En TIDE creemos que el verdadero cambio se construye desde los pequeños detalles. Lo que comés, cómo entrenás, cómo descansás, con quién te rodeás… todo importa. Todo suma. Nuestro estilo de vida no se basa en extremos, sino en decisiones diarias que te empujan hacia tu mejor versión. Porque el bienestar no pasa solo en el gimnasio. Pasa en cada elección que hacés. <span class="highlight-text" data-translate="servicios.lifestyle.highlight">Las herramientas más poderosas para tu salud son simples y muchas veces, gratis:</span></p>
+                                    <ul class="belief-list">
+                                        <li data-translate="servicios.lifestyle.list1">Moverte todos los días</li>
+                                        <li data-translate="servicios.lifestyle.list2">Dormir bien</li>
+                                        <li data-translate="servicios.lifestyle.list3">Tiempo al sol</li>
+                                        <li data-translate="servicios.lifestyle.list4">Comer comida real (esto no es gratis, pero vale cada centavo)</li>
+                                        <li data-translate="servicios.lifestyle.list5">Bajar un cambio y manejar el estrés</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 2: Entrenamiento -->
+                        <div class="swiper-slide">
+                            <div class="belief-content">
+                                <h3 class="slide-title" data-translate="servicios.training.title">Entrenamiento</h3>
+                                <div class="slide-text">
+                                    <p data-translate="servicios.training.text1">Esto no se trata solo de entrenar. Se trata de hacerlo por vos. De elegir superarte. Es un mindset.</p>
+                                    <p data-translate="servicios.training.text2">El entrenamiento es la herramienta con la que construimos fuerza no solo física, también mental. Es hacer lo que hay que hacer. Cada sesión es un paso hacia tu mejor versión.</p>
+                                    <p data-translate="servicios.training.text3">Trabajamos con objetivos claros, estructura sólida y disciplina diaria. Porque cuando se trata de mejorar, no hay atajos. Se trata de disfrutar el proceso y en quién te vas convirtiendo.</p>
+                                    <p data-translate="servicios.training.text4">No importa si estás empezando o si querés llevarlo al próximo nivel. El foco es el mismo: tener un plan consistente, entrenar con inteligencia e ir hacia los objetivos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 3: Nutrición -->
+                        <div class="swiper-slide">
+                            <div class="belief-content">
+                                <h3 class="slide-title" data-translate="servicios.nutrition.title">Nutrición</h3>
+                                <div class="slide-text">
+                                    <p data-translate="servicios.nutrition.text1">Me apasiona la nutrición, desde chico. Es claro: lo que comes impacta directamente en tus resultados, todo forma parte de un mismo camino.</p>
+                                    <p data-translate="servicios.nutrition.text2">¿Querés rendir mejor en tus entrenamientos? ¿Mejorar tu descanso? ¿Sentirte con más energía durante el día? Entonces, lo que comés importa  y tiene un impacto directo en tu calidad de vida, todos los días.</p>
+                                    <p data-translate="servicios.nutrition.text3">La idea no es volverse esclavo de la comida. Es aprender a usarla a tu favor. Entender qué necesita tu cuerpo y cuándo  para empujar más y vivir al máximo.</p>
+                                    <p data-translate="servicios.nutrition.text4">No existe el bienestar real sin una base alimentaria sólida.</p>
+                                    <p class="highlight-text" data-translate="servicios.nutrition.highlight">Se trata de aprender a comer bien para poder vivir bien.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Navigation -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    
+                    <!-- Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+        </div>
+    </section>
+
+    <!-- Full Width Video Section -->
+    <section class="full-width-video-section">
+        <div class="full-width-video-container">
+            <video autoplay loop muted playsinline class="full-width-video" loading="lazy">
+                <source src="images/TIDE VIDEO 2.mp4" type="video/mp4">
+                <source src="images/Tide Video 2.webm" type="video/webm">
+                <!-- Fallback image if video doesn't load -->
+                <img src="images/away.jpg" alt="TIDE Lifestyle" class="full-width-image">
+            </video>
+            <div class="full-width-overlay">
+                <div class="container">
+                    <div class="row align-items-center min-vh-100">
+                        <div class="col-12 text-center text-white">
+                            <h2 class="full-width-title" data-aos="fade-up" data-translate="video.title">Transforma tu realidad</h2>
+                            <p class="full-width-subtitle" data-aos="fade-up" data-aos-delay="200" data-translate="video.subtitle">
+                                Cada decisión cuenta, cada acción suma
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA Section -->
+    <section id="entrenar" class="cta-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="cta-content">
+                        <h2 class="cta-title" data-translate="cta.title">ENTRENA CONMIGO.<br>¿CÓMO? ¿CUÁNDO?<br>DONDE SEA QUE ESTÉS.</h2>
+                        <p class="cta-text" data-translate="cta.text1">
+                            Trabajamos online, 1 a 1 con objetivos claros.
+                        </p>
+                        <p class="cta-text" data-translate="cta.text2">
+                            Trabajamos con personas que estén listas para tomarse en serio su proceso. Porque cuando hay decisión, los resultados llegan. Y yo estoy para ayudarte a sostener ese camino.
+                        </p>
+                        <p class="cta-text" data-translate="cta.text3">
+                            La duración mínima es de 3 meses. Ese es el tiempo que necesitamos para ayudarte a construir bases sólidas y empezar a ver cambios reales.
+                        </p>
+                        <p class="cta-text" data-translate="cta.text4">
+                            Durante todo el proceso, vas a tener acompañamiento cercano: una videollamada de inicio para conocernos bien, alinear objetivos y afilar el plan. A partir de conocernos vas a recibir seguimiento por chat y videollamada para que no camines solo. Estamos ahí para empujar, ajustar y sostener. ¿Mi objetivo? Es que vos cumplas los tuyos.
+                        </p>
+                        <p class="cta-text" data-translate="cta.text5">
+                            Esto no es una app ni algo prearmado. Es un proceso hecho a medida, con vos en el centro. Yo estoy al 100% y espero lo mismo de vos.
+                        </p>
+                        <div class="cta-features">
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span data-translate="cta.feature1">Entrenamiento Personalizado</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span data-translate="cta.feature2">Plan Nutricional</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span data-translate="cta.feature3">Seguimiento Constante</span>
+                            </div>
+                          
+                        </div>
+                        <a href="#contacto" class="btn btn-primary btn-lg" data-translate="cta.button">Empezar Ahora</a>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="cta-image">
+                        <img src="images/color.webp" alt="Entrenamiento Personal" class="img-fluid rounded" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería Section -->
+    <section id="galeria" class="galeria-section">
+        <div class="galeria-grid">
+            <div class="galeria-item" data-aos="fade-up" data-aos-delay="100">
+                <img src="images/training.webp" alt="TIDE Surf Lifestyle" loading="lazy">
+            </div>
+            <div class="galeria-item" data-aos="fade-up" data-aos-delay="200">
+                <img src="images/train2.webp" alt="TIDE Training" loading="lazy">
+            </div>
+            <div class="galeria-item" data-aos="fade-up" data-aos-delay="300">
+                <img src="images/train3.webp" alt="TIDE Fitness" loading="lazy">
+            </div>
+            <div class="galeria-item" data-aos="fade-up" data-aos-delay="400">
+                <img src="images/train4.webp" alt="TIDE Wellness" loading="lazy">
+            </div>
+            <div class="galeria-item" data-aos="fade-up" data-aos-delay="500">
+                <img src="images/train7.webp" alt="TIDE Transformation" loading="lazy">
+            </div>
+            <div class="galeria-item" data-aos="fade-up" data-aos-delay="600">
+                <img src="images/train6.webp" alt="TIDE Success" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Mí Section -->
+    <section id="sobre-mi" class="sobre-mi-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="sobre-mi-image">
+                        <img src="images/TOMIPERFIL.webp" alt="Sobre Mí" class="img-fluid rounded" loading="lazy">
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="sobre-mi-content">
+                        <h2 class="sobre-mi-title" data-translate="sobre-mi.title">SOBRE MÍ</h2>
+                        <p class="sobre-mi-text" data-translate="sobre-mi.text1">
+                            Entonces, toca hablar de mí. Siempre cuesta un poco ponerse en palabras, pero acá vamos.
+                        </p>
+                        <p class="sobre-mi-text" data-translate="sobre-mi.text2">
+                            Soy de Buenos Aires, Argentina. Desde muy chico, mi viejo me inculcó el amor por el deporte al ser el un gran escalador de alta montaña, desde temprana edad me enseño los valores del deporte. Más allá de que hoy todo esto ya es parte de mí, el origen viene de ahi. De esas primeras enseñanzas y ese legado.
+                        </p>
+                        <p class="sobre-mi-text" data-translate="sobre-mi.text3">
+                            A lo largo de mi vida practiqué diferentes deportes, ya que en este encontré siempre la forma de conectarme conmigo mismo, mas allá de que hoy me inclino y aspiro a mejorar en el deporte de tablas. A los 18 años tuve la oportunidad de empezar a viajar por trabajo, viví en India, Inglaterra, Perú, Chile, México, Costa Rica, Hawái (Maui), entre otros lugares. Cada viaje me formó tanto como persona como en mi enfoque hacia el bienestar y una vision amplia hacia la vida.
+                        </p>
+                        <p class="sobre-mi-text" data-translate="sobre-mi.text4">
+                            Siempre fui inquieto y un apasionado del bien estar, desde moverme, como la nutrición y el descanso. Desde chico entendí que sostener hábitos positivos es clave para construir una buena salud. Desde lo que comemos, hasta como nos movemos y los valores que elegimos. Son todas decisiones que determinan en quien te vas convirtiendo. Las bases y la estructura lo son todo cuando se trata de crecer, es sencillo, buenos hábitos son buenas bases.
+                        </p>
+                        <p class="sobre-mi-text" data-translate="sobre-mi.text5">
+                            Fui siempre una persona competitiva. Por naturaleza mi personalidad pide siempre empujar mas. Pero el costo de esto no siempre es fácil.
+                        </p>
+                        <p class="sobre-mi-text" data-translate="sobre-mi.text6">
+                            Con el tiempo, entendí que lo que realmente nos sostiene sobre todo cuando la motivación no está son los valores y principios que elegimos. Por eso, para mí, la determinación, la disciplina, la constancia y la acción no son negociables. Son la base desde la cual construyo y me empujo hacia mi mejor versión.
+                        </p>
+                        <p class="sobre-mi-text" data-translate="sobre-mi.text7">
+                            El deporte es mi pilar. Es donde vuelvo siempre y el gimnasio es donde pago el precio del deporte.
+                        </p>
+                        <p class="sobre-mi-text" data-translate="sobre-mi.text8">
+                            Si bien hoy en día no me enfoco en el sacrificio, ni en extremos, tuve un momento donde estuve aislado para ver hasta dónde era capaz de llegar. Como esto es prueba y error, me di cuenta que estaba en un extremo y eso tampoco es sano ya que lo que busco es salud y ante todo somos seres sociales. Tiene que haber cierto equilibrio en las distintas areas de tu vida. La familia, los amigos, el entrenamiento, como lo profesional. Todo tiene que estar en balance. Donde sí hago foco es en el desafío y en el esfuerzo diario.
+                        </p>
+                        <p class="sobre-mi-text" data-translate="sobre-mi.text9">
+                            Así nace tide, una forma de vivir. Mi propósito es mejorar tu calidad de vida, que trabajemos juntos, que mejoremos tu salud y que busquemos la mejor version de vos mismo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Full Width Image Section -->
+    <section class="contact-image-section">
+        <img src="images/IMG_3146.webp" alt="TIDE Lifestyle" class="contact-image">
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="contacto-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title" data-aos="fade-up" data-translate="contacto.title">¿Listo para Transformar tu Vida?</h2>
+                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200" data-translate="contacto.subtitle">
+                        Toma la decisión hoy y empieza tu camino hacia tu mejor versión
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contacto-card" data-aos="fade-up">
+                        <form class="contacto-form" action="https://formspree.io/f/mrblnzlv" method="POST">
+                            <input type="hidden" name="_subject" value="Nuevo mensaje de TIDE Training">
+                            <input type="hidden" name="_next" value="https://tideactive.com/gracias.html">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="nombre" class="form-control" placeholder="Tu nombre" data-translate="contacto.name" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" name="email" class="form-control" placeholder="Tu email" data-translate="contacto.email" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea name="mensaje" class="form-control" rows="5" placeholder="Cuéntame sobre tus objetivos y por qué quieres empezar este camino..." data-translate="contacto.message" required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg" data-translate="contacto.send">Enviar Mensaje</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-logo">
+                        <img src="images/tidelogo.png" alt="TIDE Logo" loading="lazy">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-links">
+                        <h4 data-translate="footer.links">Enlaces</h4>
+                        <ul>
+                            <li><a href="#home" data-translate="nav.home">Home</a></li>
+                            <li><a href="#valores" data-translate="nav.valores">Valores</a></li>
+                            <li><a href="#servicios">Servicios</a></li>
+                            <li><a href="#entrenar" data-translate="nav.entrenar">Entrenar</a></li>
+                            <li><a href="#sobre-mi" data-translate="nav.sobre-mi">Sobre Mí</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-contact">
+                        <h4 data-translate="footer.contact">Contacto</h4>
+                        <p><i class="fas fa-envelope"></i> info.tidetraining@gmail.com</p>
+                        <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/tomihill1/" target="_blank" rel="noopener">@tomihill1</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-translate="footer.copyright">&copy; 2025 TIDE. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
